@@ -51,7 +51,7 @@ def input_handle():
 
 def load_font():
     pygame.font.init()
-    var.Font.main = pygame.font.Font('Font/neodgm.ttf', 32)
+    var.Font.main = pygame.font.Font('../Font/neodgm.ttf', 32)
 
 def load_image():
     pass
