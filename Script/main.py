@@ -2,6 +2,7 @@ import pygame
 import sys
 
 import var
+import asset
 
 import title
 import field
@@ -45,16 +46,25 @@ def input_handle():
         
         if event.type == pygame.KEYDOWN:
             key = event.key
+
+            if var.scene == 'field':
+                field.key_down(key)
         
         if event.type == pygame.KEYUP:
             key = event.key
 
+            if var.scene == 'title':
+                title.key_up(key)
+
+            elif var.scene == 'field':
+                field.key_up(key)
+
 def load_font():
     pygame.font.init()
-    var.Font.main = pygame.font.Font('../Font/neodgm.ttf', 32)
+    asset.Font.main = pygame.font.Font('../Font/neodgm.ttf', 32)
 
 def load_image():
-    pass
+    asset.Image.arrow_right = pygame.image.load('../Image/ArrowRight.png')
 
 main()
 loop()

@@ -6,5 +6,8 @@ scene = 'title'
 state = ''
 pause = False
 
-class Font():
-    main = None
+class Selected():
+    title = 0
+
+class Player():
+    rect = [40, 40, 40, 40]
