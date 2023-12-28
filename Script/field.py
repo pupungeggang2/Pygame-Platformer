@@ -4,6 +4,7 @@ import var
 import asset
 import const
 import UI
+import data
 
 import draw
 

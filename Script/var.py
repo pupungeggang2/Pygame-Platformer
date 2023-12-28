@@ -11,3 +11,8 @@ class Selected():
 
 class Player():
     rect = [40, 40, 40, 40]
+
+class Field():
+    place = []
+    tile = []
+    thing = []
