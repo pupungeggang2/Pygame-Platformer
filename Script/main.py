@@ -10,7 +10,7 @@ import field
 var.clock = pygame.time.Clock()
 
 def main():
-    var.screen = pygame.display.set_mode([1280, 720])
+    var.screen = pygame.display.set_mode([1280, 800])
     pygame.display.set_caption('Desserterria-Platform')
     load_font()
     load_image()
