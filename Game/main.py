@@ -6,6 +6,8 @@ import const
 import var
 import UI
 
+import fsave
+
 import scenetitle
 import scenefield
 
@@ -15,6 +17,7 @@ def init():
     pygame.display.set_caption('Pygame Platformer')
     var.clock = pygame.time.Clock()
 
+    fsave.save_init()
     load_image()
     load_font()
 

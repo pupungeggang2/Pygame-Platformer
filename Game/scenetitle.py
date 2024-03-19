@@ -3,6 +3,8 @@ import const
 import var
 import UI
 
+import fphysics
+
 import pygame
 
 def loop():
@@ -18,7 +20,14 @@ def display():
     pygame.display.flip()
 
 def mouse_up(x, y, button):
-    pass
+    if button == 1:
+        if var.menu == False:
+            if var.state == '':
+                if fphysics.point_inside_rect_array(x, y, UI.Title.button_start):
+                    var.scene = 'field'
+                    var.state = ''
+                    var.player['position'] = [0, 0]
+
 
 def key_down(key):
     pass

@@ -7,3 +7,11 @@ class Color():
     magenta = [255, 0, 255]
     yellow = [255, 255, 255]
     white = [255, 255, 255]
+
+empty_save = {
+    'place' : 'home',
+    'progress' : {
+        'medal' : {},
+        'warp' : {},
+    },
+}
